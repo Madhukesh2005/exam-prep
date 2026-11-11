@@ -1,0 +1,16 @@
+# Maven
+**/target/
+**/test-output/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

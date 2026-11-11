@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+</head>
+<body>
+<div id="loginBox" style="background-color: lightblue; width: 300px; height: 200px">
+    <h2>Student Login</h2>
+    <input id="username" type="text" placeholder="Username">
+    <br><br>
+    <input id="password" type="password" placeholder="Password">
+    <br><br>
+    <button id="loginButton" onclick="login()">Login</button>
+    <div id="message"></div>
+</div>
+<script>
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    document.getElementById("message").innerText =
+        username === "student" && password === "12345"
+            ? "Login Successful"
+            : "Invalid Username or Password";
+}
+</script>
+</body>
+</html>
